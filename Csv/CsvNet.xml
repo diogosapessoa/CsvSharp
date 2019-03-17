@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CsvNet</name>
+    </assembly>
+    <members>
+        <member name="T:CsvNet.Attributes.CsvBoolFormatAttribute">
+            <summary>
+            To be added.
+            </summary>
+        </member>
+        <member name="P:CsvNet.Attributes.CsvBoolFormatAttribute.True">
+            <summary>
+            To be added.
+            </summary>
+        </member>
+        <member name="P:CsvNet.Attributes.CsvBoolFormatAttribute.False">
+            <summary>
+            To be added.
+            </summary>
+        </member>
+        <member name="M:CsvNet.Attributes.CsvBoolFormatAttribute.#ctor(System.String,System.String)">
+            <summary>
+            To be added.
+            </summary>
+            <param name="true"></param>
+            <param name="false"></param>
+        </member>
+        <member name="M:CsvNet.Attributes.CsvBoolFormatAttribute.Convert(System.String,System.IFormatProvider)">
+            <summary>
+            To be added.
+            </summary>
+            <param name="value"></param>
+            <param name="provider"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CsvNet.Attributes.CsvBoolFormatAttribute.ConvertBack(System.Object,System.IFormatProvider)">
+            <summary>
+            To be added.
+            </summary>
+            <param name="value"></param>
+            <param name="provider"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CsvNet.Attributes.CsvDateTimeFormatAttribute">
+            <summary>
+            To be added.
+            </summary>
+        </member>
+        <member name="P:CsvNet.Attributes.CsvDateTimeFormatAttribute.Format">
+            <summary>
+            To be added.
+            </summary>
+        </member>
+        <member name="M:CsvNet.Attributes.CsvDateTimeFormatAttribute.#ctor(System.String)">
+            <summary>
+            To be added.
+            </summary>
+            <param name="format"></param>
+        </member>
+        <member name="M:CsvNet.Attributes.CsvDateTimeFormatAttribute.Convert(System.String,System.IFormatProvider)">
+            <summary>
+            To be added.
+            </summary>
+            <param name="value"></param>
+            <param name="provider"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CsvNet.Attributes.CsvDateTimeFormatAttribute.ConvertBack(System.Object,System.IFormatProvider)">
+            <summary>
+            To be added.
+            </summary>
+            <param name="value"></param>
+            <param name="provider"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CsvNet.CsvConvert">
+            <summary>
+            To be added.
+            </summary>
+        </member>
+        <member name="M:CsvNet.CsvConvert.Serialize``1(System.Collections.Generic.IEnumerable{``0},System.Globalization.CultureInfo,System.String)">
+            <summary>
+            To be added.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection"></param>
+            <param name="cultureInfo"></param>
+            <param name="separator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CsvNet.CsvConvert.Deserialize``1(System.Collections.Generic.IEnumerable{System.String},System.Globalization.CultureInfo,System.String)">
+            <summary>
+            To be added.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="csv"></param>
+            <param name="cultureInfo"></param>
+            <param name="separator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CsvNet.CsvConvert.Deserialize``1(System.String,System.Globalization.CultureInfo,System.String)">
+            <summary>
+            To be added.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="csv"></param>
+            <param name="cultureInfo"></param>
+            <param name="separator"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CsvNet.Extensions.CsvReflectionExtensions">
+            <summary>
+            To be added.
+            </summary>
+        </member>
+        <member name="F:CsvNet.Extensions.CsvReflectionExtensions.BindingFlagsConstraint">
+            <summary>
+            to be added.
+            </summary>
+        </member>
+        <member name="M:CsvNet.Extensions.CsvReflectionExtensions.GetValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            To be added.
+            </summary>
+            <param name="propertyInfo"></param>
+            <param name="obj"></param>
+            <param name="cultureInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CsvNet.Extensions.CsvReflectionExtensions.SetValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            To be added.
+            </summary>
+            <param name="propertyInfo"></param>
+            <param name="obj"></param>
+            <param name="value"></param>
+            <param name="cultureInfo"></param>
+        </member>
+        <member name="M:CsvNet.Extensions.CsvReflectionExtensions.GetFormatter(System.Reflection.PropertyInfo)">
+            <summary>
+            To be added.
+            To be added.
+            </summary>
+            <param name="propertyInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CsvNet.Extensions.CsvReflectionExtensions.CsvObjectFromLine``1(System.String,System.Globalization.CultureInfo,System.String)">
+            <summary>
+            To be added.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="line"></param>
+            <param name="cultureInfo"></param>
+            <param name="separator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CsvNet.Extensions.CsvReflectionExtensions.CsvLineFromObject``1(``0,System.Globalization.CultureInfo,System.String)">
+            <summary>
+            To be added.
+            </summary>
+            <param name="obj"></param>
+            <param name="cultureInfo"></param>
+            <param name="separator"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CsvNet.Iterfaces.IConvertFormat">
+            <summary>
+            To be added.
+            </summary>
+        </member>
+        <member name="M:CsvNet.Iterfaces.IConvertFormat.Convert(System.String,System.IFormatProvider)">
+            <summary>
+            To be added.
+            </summary>
+            <param name="value"></param>
+            <param name="provider"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CsvNet.Iterfaces.IConvertFormat.ConvertBack(System.Object,System.IFormatProvider)">
+            <summary>
+            To be added.
+            </summary>
+            <param name="value"></param>
+            <param name="provider"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
