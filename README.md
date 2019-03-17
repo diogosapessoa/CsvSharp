@@ -27,7 +27,7 @@ void Main()
     IEnumerable<Foo> collection = ...
     
     //Get string text from collection
-    var text = CsvConvert.Serialize(collection, CultureInfo.CurrentCulture);
+    string text = CsvConvert.Serialize(collection, CultureInfo.CurrentCulture);
     
     Console.WriteLine(text);
 }
