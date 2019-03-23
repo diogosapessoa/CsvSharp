@@ -53,7 +53,7 @@ void Main()
 ``Result`` list
 ```
 +-----------+----------+----------------------+
-| Firstname | LastName |      BirthDate       |
+| FirstName | LastName |      BirthDate       |
 +-----------+----------+----------------------+
 | Galileu   | Galilei  | 1564-02-15 00:00:00  |
 | Isaac     | Newton   | 1643-04-01 00:00:00  |
