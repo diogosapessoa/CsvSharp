@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CsvSharp.Iterfaces
+namespace CsvSharp.Interfaces
 {
     /// <summary>
     /// To be added.

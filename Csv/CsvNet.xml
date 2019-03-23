@@ -164,12 +164,12 @@
             <param name="separator"></param>
             <returns></returns>
         </member>
-        <member name="T:CsvSharp.Iterfaces.IConvertFormat">
+        <member name="T:CsvSharp.Interfaces.IConvertFormat">
             <summary>
             To be added.
             </summary>
         </member>
-        <member name="M:CsvSharp.Iterfaces.IConvertFormat.Convert(System.String,System.IFormatProvider)">
+        <member name="M:CsvSharp.Interfaces.IConvertFormat.Convert(System.String,System.IFormatProvider)">
             <summary>
             To be added.
             </summary>
@@ -177,7 +177,7 @@
             <param name="provider"></param>
             <returns></returns>
         </member>
-        <member name="M:CsvSharp.Iterfaces.IConvertFormat.ConvertBack(System.Object,System.IFormatProvider)">
+        <member name="M:CsvSharp.Interfaces.IConvertFormat.ConvertBack(System.Object,System.IFormatProvider)">
             <summary>
             To be added.
             </summary>

@@ -1,4 +1,4 @@
-﻿using CsvSharp.Iterfaces;
+﻿using CsvSharp.Interfaces;
 using System;
 
 namespace CsvSharp.Attributes

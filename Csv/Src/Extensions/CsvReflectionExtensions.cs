@@ -1,4 +1,4 @@
-﻿using CsvSharp.Iterfaces;
+﻿using CsvSharp.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Globalization;

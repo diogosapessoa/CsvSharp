@@ -12,8 +12,8 @@
     <PackageProjectUrl>https://github.com/diogosapessoa/CsvNet</PackageProjectUrl>
     <Description>Simple CSV Serializer &amp; Deserializer for C#</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.1</Version>
-    <PackageReleaseNotes>Change the namespaces</PackageReleaseNotes>
+    <Version>1.0.2</Version>
+    <PackageReleaseNotes>Fix interface namespace text</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
