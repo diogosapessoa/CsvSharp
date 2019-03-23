@@ -1,32 +1,32 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>CsvNet</name>
+        <name>CsvSharp</name>
     </assembly>
     <members>
-        <member name="T:CsvNet.Attributes.CsvBoolFormatAttribute">
+        <member name="T:CsvSharp.Attributes.CsvBoolFormatAttribute">
             <summary>
             To be added.
             </summary>
         </member>
-        <member name="P:CsvNet.Attributes.CsvBoolFormatAttribute.True">
+        <member name="P:CsvSharp.Attributes.CsvBoolFormatAttribute.True">
             <summary>
             To be added.
             </summary>
         </member>
-        <member name="P:CsvNet.Attributes.CsvBoolFormatAttribute.False">
+        <member name="P:CsvSharp.Attributes.CsvBoolFormatAttribute.False">
             <summary>
             To be added.
             </summary>
         </member>
-        <member name="M:CsvNet.Attributes.CsvBoolFormatAttribute.#ctor(System.String,System.String)">
+        <member name="M:CsvSharp.Attributes.CsvBoolFormatAttribute.#ctor(System.String,System.String)">
             <summary>
             To be added.
             </summary>
             <param name="true"></param>
             <param name="false"></param>
         </member>
-        <member name="M:CsvNet.Attributes.CsvBoolFormatAttribute.Convert(System.String,System.IFormatProvider)">
+        <member name="M:CsvSharp.Attributes.CsvBoolFormatAttribute.Convert(System.String,System.IFormatProvider)">
             <summary>
             To be added.
             </summary>
@@ -34,7 +34,7 @@
             <param name="provider"></param>
             <returns></returns>
         </member>
-        <member name="M:CsvNet.Attributes.CsvBoolFormatAttribute.ConvertBack(System.Object,System.IFormatProvider)">
+        <member name="M:CsvSharp.Attributes.CsvBoolFormatAttribute.ConvertBack(System.Object,System.IFormatProvider)">
             <summary>
             To be added.
             </summary>
@@ -42,23 +42,23 @@
             <param name="provider"></param>
             <returns></returns>
         </member>
-        <member name="T:CsvNet.Attributes.CsvDateTimeFormatAttribute">
+        <member name="T:CsvSharp.Attributes.CsvDateTimeFormatAttribute">
             <summary>
             To be added.
             </summary>
         </member>
-        <member name="P:CsvNet.Attributes.CsvDateTimeFormatAttribute.Format">
+        <member name="P:CsvSharp.Attributes.CsvDateTimeFormatAttribute.Format">
             <summary>
             To be added.
             </summary>
         </member>
-        <member name="M:CsvNet.Attributes.CsvDateTimeFormatAttribute.#ctor(System.String)">
+        <member name="M:CsvSharp.Attributes.CsvDateTimeFormatAttribute.#ctor(System.String)">
             <summary>
             To be added.
             </summary>
             <param name="format"></param>
         </member>
-        <member name="M:CsvNet.Attributes.CsvDateTimeFormatAttribute.Convert(System.String,System.IFormatProvider)">
+        <member name="M:CsvSharp.Attributes.CsvDateTimeFormatAttribute.Convert(System.String,System.IFormatProvider)">
             <summary>
             To be added.
             </summary>
@@ -66,7 +66,7 @@
             <param name="provider"></param>
             <returns></returns>
         </member>
-        <member name="M:CsvNet.Attributes.CsvDateTimeFormatAttribute.ConvertBack(System.Object,System.IFormatProvider)">
+        <member name="M:CsvSharp.Attributes.CsvDateTimeFormatAttribute.ConvertBack(System.Object,System.IFormatProvider)">
             <summary>
             To be added.
             </summary>
@@ -74,12 +74,12 @@
             <param name="provider"></param>
             <returns></returns>
         </member>
-        <member name="T:CsvNet.CsvConvert">
+        <member name="T:CsvSharp.CsvConvert">
             <summary>
             To be added.
             </summary>
         </member>
-        <member name="M:CsvNet.CsvConvert.Serialize``1(System.Collections.Generic.IEnumerable{``0},System.Globalization.CultureInfo,System.String)">
+        <member name="M:CsvSharp.CsvConvert.Serialize``1(System.Collections.Generic.IEnumerable{``0},System.Globalization.CultureInfo,System.String)">
             <summary>
             To be added.
             </summary>
@@ -89,7 +89,7 @@
             <param name="separator"></param>
             <returns></returns>
         </member>
-        <member name="M:CsvNet.CsvConvert.Deserialize``1(System.Collections.Generic.IEnumerable{System.String},System.Globalization.CultureInfo,System.String)">
+        <member name="M:CsvSharp.CsvConvert.Deserialize``1(System.Collections.Generic.IEnumerable{System.String},System.Globalization.CultureInfo,System.String)">
             <summary>
             To be added.
             </summary>
@@ -99,7 +99,7 @@
             <param name="separator"></param>
             <returns></returns>
         </member>
-        <member name="M:CsvNet.CsvConvert.Deserialize``1(System.String,System.Globalization.CultureInfo,System.String)">
+        <member name="M:CsvSharp.CsvConvert.Deserialize``1(System.String,System.Globalization.CultureInfo,System.String)">
             <summary>
             To be added.
             </summary>
@@ -109,17 +109,17 @@
             <param name="separator"></param>
             <returns></returns>
         </member>
-        <member name="T:CsvNet.Extensions.CsvReflectionExtensions">
+        <member name="T:CsvSharp.Extensions.CsvReflectionExtensions">
             <summary>
             To be added.
             </summary>
         </member>
-        <member name="F:CsvNet.Extensions.CsvReflectionExtensions.BindingFlagsConstraint">
+        <member name="F:CsvSharp.Extensions.CsvReflectionExtensions.BindingFlagsConstraint">
             <summary>
             to be added.
             </summary>
         </member>
-        <member name="M:CsvNet.Extensions.CsvReflectionExtensions.GetValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+        <member name="M:CsvSharp.Extensions.CsvReflectionExtensions.GetValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
             <summary>
             To be added.
             </summary>
@@ -128,7 +128,7 @@
             <param name="cultureInfo"></param>
             <returns></returns>
         </member>
-        <member name="M:CsvNet.Extensions.CsvReflectionExtensions.SetValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+        <member name="M:CsvSharp.Extensions.CsvReflectionExtensions.SetValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
             <summary>
             To be added.
             </summary>
@@ -137,7 +137,7 @@
             <param name="value"></param>
             <param name="cultureInfo"></param>
         </member>
-        <member name="M:CsvNet.Extensions.CsvReflectionExtensions.GetFormatter(System.Reflection.PropertyInfo)">
+        <member name="M:CsvSharp.Extensions.CsvReflectionExtensions.GetFormatter(System.Reflection.PropertyInfo)">
             <summary>
             To be added.
             To be added.
@@ -145,7 +145,7 @@
             <param name="propertyInfo"></param>
             <returns></returns>
         </member>
-        <member name="M:CsvNet.Extensions.CsvReflectionExtensions.CsvObjectFromLine``1(System.String,System.Globalization.CultureInfo,System.String)">
+        <member name="M:CsvSharp.Extensions.CsvReflectionExtensions.CsvObjectFromLine``1(System.String,System.Globalization.CultureInfo,System.String)">
             <summary>
             To be added.
             </summary>
@@ -155,7 +155,7 @@
             <param name="separator"></param>
             <returns></returns>
         </member>
-        <member name="M:CsvNet.Extensions.CsvReflectionExtensions.CsvLineFromObject``1(``0,System.Globalization.CultureInfo,System.String)">
+        <member name="M:CsvSharp.Extensions.CsvReflectionExtensions.CsvLineFromObject``1(``0,System.Globalization.CultureInfo,System.String)">
             <summary>
             To be added.
             </summary>
@@ -164,12 +164,12 @@
             <param name="separator"></param>
             <returns></returns>
         </member>
-        <member name="T:CsvNet.Iterfaces.IConvertFormat">
+        <member name="T:CsvSharp.Iterfaces.IConvertFormat">
             <summary>
             To be added.
             </summary>
         </member>
-        <member name="M:CsvNet.Iterfaces.IConvertFormat.Convert(System.String,System.IFormatProvider)">
+        <member name="M:CsvSharp.Iterfaces.IConvertFormat.Convert(System.String,System.IFormatProvider)">
             <summary>
             To be added.
             </summary>
@@ -177,7 +177,7 @@
             <param name="provider"></param>
             <returns></returns>
         </member>
-        <member name="M:CsvNet.Iterfaces.IConvertFormat.ConvertBack(System.Object,System.IFormatProvider)">
+        <member name="M:CsvSharp.Iterfaces.IConvertFormat.ConvertBack(System.Object,System.IFormatProvider)">
             <summary>
             To be added.
             </summary>

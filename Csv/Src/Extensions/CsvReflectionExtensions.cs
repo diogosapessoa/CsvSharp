@@ -1,11 +1,11 @@
-﻿using CsvNet.Iterfaces;
+﻿using CsvSharp.Iterfaces;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Reflection;
 
-namespace CsvNet.Extensions
+namespace CsvSharp.Extensions
 {
     /// <summary>
     /// To be added.

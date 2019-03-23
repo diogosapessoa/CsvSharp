@@ -1,10 +1,10 @@
-﻿using CsvNet.Extensions;
+﻿using CsvSharp.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 
-namespace CsvNet
+namespace CsvSharp
 {
     /// <summary>
     /// To be added.

@@ -1,7 +1,7 @@
-﻿using CsvNet.Iterfaces;
+﻿using CsvSharp.Iterfaces;
 using System;
 
-namespace CsvNet.Attributes
+namespace CsvSharp.Attributes
 {
     /// <summary>
     /// To be added.
