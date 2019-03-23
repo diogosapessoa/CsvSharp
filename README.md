@@ -18,12 +18,12 @@ using CsvNet.Attributes;
 
 public class Foo
 {
-	public string FirstName { get; set; }
+    public string FirstName { get; set; }
 
-	public string LastName { get; set; }
+    public string LastName { get; set; }
 	
-	[CsvDateTimeFormat("yyyy-MM-dd")]
-	public DateTime BirthDate { get; set; }
+    [CsvDateTimeFormat("yyyy-MM-dd")]
+    public DateTime BirthDate { get; set; }
 }
 ```
 
