@@ -1,5 +1,13 @@
-# CsvNet
+# CsvSharp
 CSV Serializer &amp; Deserializer for C#
+
+## Installation
+
+**``Csv.Csharp`` is available on NuGet**
+
+.NET Standard 2.0
+
+[![NuGet](https://img.shields.io/nuget/v/Csv.Csharp.svg)](https://www.nuget.org/packages/Csv.Csharp/)
 
 ## Getting Started
 A basic use of the project something like this...
@@ -14,7 +22,7 @@ Isaac;Newton;1643-04-01
 ``Foo`` class
 
 ```csharp
-using CsvNet.Attributes;
+using CsvSharp.Attributes;
 
 public class Foo
 {
@@ -28,7 +36,7 @@ public class Foo
 ```
 
 ```csharp
-using CsvNet;
+using CsvSharp;
 using System.Globalization;
 using System.IO;
 
@@ -53,7 +61,7 @@ void Main()
 ```
 
 ```csharp
-using CsvNet;
+using CsvSharp;
 using System;
 using System.Globalization;
 
