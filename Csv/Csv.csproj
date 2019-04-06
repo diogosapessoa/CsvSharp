@@ -8,8 +8,8 @@
     <PackageId>Csv.Csharp</PackageId>
     <PackageTags>c# netstandard csv serialize deserialize</PackageTags>
     <Company />
-    <PackageLicenseUrl>https://raw.githubusercontent.com/diogosapessoa/CsvNet/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/diogosapessoa/CsvNet</PackageProjectUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/diogosapessoa/CsvSharp/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/diogosapessoa/CsvSharp</PackageProjectUrl>
     <Description>Simple CSV Serializer &amp; Deserializer for C#</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>1.0.2</Version>
@@ -17,11 +17,11 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\Users\Diogo\source\repos\CsvNet\Csv\CsvNet.xml</DocumentationFile>
+    <DocumentationFile>C:\Users\Diogo\source\repos\CsvNet\Csv\CsvSharp.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>C:\Users\Diogo\source\repos\CsvNet\Csv\CsvNet.xml</DocumentationFile>
+    <DocumentationFile>C:\Users\Diogo\source\repos\CsvNet\Csv\CsvSharp.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>
