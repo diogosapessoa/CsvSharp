@@ -19,7 +19,7 @@ Galileu;Galilei;1564-02-15
 Isaac;Newton;1643-04-01
 ```
 
-``Foo`` class
+``Foo class``
 
 ```csharp
 using CsvSharp.Attributes;
@@ -50,7 +50,7 @@ void Main()
 }
 ```
 
-``Result`` list
+``Result list``
 ```
 +-----------+----------+----------------------+
 | FirstName | LastName |      BirthDate       |
@@ -76,7 +76,7 @@ void Main()
 }
 ```
 
-``Result`` text
+``Result text``
 ```
 Galileu;Galilei;1564-02-15
 Isaac;Newton;1643-04-01
