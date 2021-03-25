@@ -7,7 +7,7 @@ CSV Serializer &amp; Deserializer for C#
 **``Csv.Csharp`` is available on NuGet** [![NuGet](https://img.shields.io/nuget/v/Csv.Csharp.svg)](https://www.nuget.org/packages/Csv.Csharp/)
 
 ```console
-PM> Install-Package Csv.Sharp -version 1.0.3
+PM> Install-Package Csv.Csharp -version 1.0.3
 ```
 
 ## Getting Started
