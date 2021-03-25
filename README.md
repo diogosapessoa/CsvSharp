@@ -1,30 +1,33 @@
 # CsvSharp
+
 CSV Serializer &amp; Deserializer for C#
 
 ## Installation
 
-**``Csv.Csharp`` is available on NuGet**
+**``Csv.Csharp`` is available on NuGet** [![NuGet](https://img.shields.io/nuget/v/Csv.Csharp.svg)](https://www.nuget.org/packages/Csv.Csharp/)
 
-.NET Standard 2.0
-
-[![NuGet](https://img.shields.io/nuget/v/Csv.Csharp.svg)](https://www.nuget.org/packages/Csv.Csharp/)
+```console
+PM> Install-Package Csv.Sharp -version 1.0.3
+```
 
 ## Getting Started
+
 A basic use of the project something like this...
 
-``persons.csv`` without column names
+``genius.csv`` without column names
 
-```
+```csv
 Galileu;Galilei;1564-02-15
 Isaac;Newton;1643-04-01
+Albert;Einstein;1879-03-13
 ```
 
-``Foo class``
+``Genius class``
 
 ```csharp
 using CsvSharp.Attributes;
 
-public class Foo
+public class Genius
 {
     public string FirstName { get; set; }
 
@@ -46,7 +49,7 @@ void Main()
     var lines = File.ReadLines(@"path\to\file.csv");
     
     //Get collection from string lines
-    IEnumerable<Foo> collection = CsvConvert.Deserialize<Foo>(lines, CultureInfo.InvariantCulture);
+    IEnumerable<Genius> collection = CsvConvert.Deserialize<Genius>(lines, CultureInfo.InvariantCulture);
 }
 ```
 
@@ -56,6 +59,7 @@ void Main()
 |:---------:|:--------:|:--------------------:|
 | Galileu   | Galilei  | 1564-02-15 00:00:00  |
 | Isaac     | Newton   | 1643-04-01 00:00:00  |
+| Albert    | Einstein | 1879-03-13 00:00:00  |
 
 ```csharp
 using CsvSharp;
@@ -64,7 +68,7 @@ using System.Globalization;
 
 void Main()
 {
-    IEnumerable<Foo> collection = ...
+    IEnumerable<Genius> collection = ...
     
     //Get string text from collection
     string text = CsvConvert.Serialize(collection, CultureInfo.InvariantCulture);
@@ -74,7 +78,9 @@ void Main()
 ```
 
 ``Result text``
-```
+
+```csv
 Galileu;Galilei;1564-02-15
 Isaac;Newton;1643-04-01
+Albert;Einstein;1879-03-13
 ```

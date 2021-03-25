@@ -1,4 +1,6 @@
-﻿using CsvSharp.Interfaces;
+﻿using CsvSharp.Attributes;
+using CsvSharp.Interfaces;
+
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -62,35 +64,24 @@ namespace CsvSharp.Extensions
         /// <returns></returns>
         public static T CsvObjectFromLine<T>(this string line, CultureInfo cultureInfo, string separator) where T : class, new()
         {
-            var words = line.Split(new[] { separator }, StringSplitOptions.RemoveEmptyEntries);
+            string[] words = line.Split(new[] { separator }, StringSplitOptions.RemoveEmptyEntries);
+            T result = new();
 
-            var result = new T();
+            List<PropertyInfo> properties = result.GetType().GetProperties(BindingFlagsConstraint)
+                .Where(p => p.CanWrite && !p.CustomAttributes.Any(a => a.AttributeType == typeof(CsvIgnoreAttribute)))
+                .ToList();
 
-            var properties = result
-                .GetType()
-                .GetProperties(BindingFlagsConstraint);
-
-            for (var index = 0; index < properties.Length; index++)
+            for (var index = 0; index < properties.Count; index++)
             {
-                var prop = properties[index];
+                PropertyInfo prop = properties[index];
+                string value = words[index];
 
-                if (!prop.CanWrite)
-                {
-                    continue;
-                }
-
-                var value = words[index];
-
-                var formatter = prop.GetFormatter();
+                IConvertFormat formatter = prop.GetFormatter();
 
                 if (formatter == null)
-                {
                     prop.SetValue(result, Convert.ChangeType(value, prop.PropertyType, cultureInfo), cultureInfo);
-                }
                 else
-                {
                     prop.SetValue(result, formatter.Convert(value, cultureInfo), cultureInfo);
-                }
             }
 
             return result;
@@ -107,20 +98,19 @@ namespace CsvSharp.Extensions
         {
             var result = new List<string>();
 
-            foreach (var prop in obj.GetType().GetProperties(BindingFlagsConstraint))
-            {
-                var value = prop.GetValue(obj, cultureInfo);
+            IEnumerable<PropertyInfo> properties = obj.GetType().GetProperties(BindingFlagsConstraint)
+                .Where(p => p.CanWrite && !p.CustomAttributes.Any(a => a.AttributeType == typeof(CsvIgnoreAttribute)));
 
-                var formatter = prop.GetFormatter();
+            foreach (var prop in properties)
+            {
+                object value = prop.GetValue(obj, cultureInfo);
+
+                IConvertFormat formatter = prop.GetFormatter();
 
                 if (formatter == null)
-                {
                     result.Add(value is IConvertible ? (value as IConvertible).ToString(cultureInfo) : value.ToString());
-                }
                 else
-                {
                     result.Add(formatter.ConvertBack(value, cultureInfo));
-                }
             }
 
             return string.Join(separator, result);

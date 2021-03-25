@@ -1,4 +1,5 @@
 ﻿using CsvSharp.Extensions;
+
 using System;
 using System.Collections.Generic;
 using System.Globalization;

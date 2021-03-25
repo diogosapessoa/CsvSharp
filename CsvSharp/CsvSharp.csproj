@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>CsvSharp</AssemblyName>
+    <RootNamespace>CsvSharp</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>1701;1702</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AssemblyVersion>1.0.3.0</AssemblyVersion>
+    <AssemblyFileVersion>1.0.3.0</AssemblyFileVersion>
+    <PackageVersion>1.0.3.0</PackageVersion>
+    <Version>1.0.3</Version>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>Csv.Csharp</PackageId>
+    <Product>Csv.Csharp</Product>
+    <Authors>diogosapessoa@gmail.com</Authors>
+    <Owners>diogosapessoa@gmail.com</Owners>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageTags>c# netstandard csv serialize deserialize</PackageTags>
+    <Company />
+    <PackageLicenseUrl>https://raw.githubusercontent.com/diogosapessoa/CsvSharp/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/diogosapessoa/CsvSharp</PackageProjectUrl>
+    <Title>Simple CSV Serializer &amp; Deserializer for C#</Title>
+    <Summary>Simple CSV Serializer &amp; Deserializer for C#</Summary>
+    <Description>Simple CSV Serializer &amp; Deserializer for C#</Description>
+    <PackageReleaseNotes>Add ignore attribute and unit tests</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\Diogo\source\repos\CsvNet\Csv\CsvSharp.xml</DocumentationFile>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>C:\Users\Diogo\source\repos\CsvNet\Csv\CsvSharp.xml</DocumentationFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+</Project>
